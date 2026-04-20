@@ -1,0 +1,23 @@
+# YOLO26 Detector PRO
+
+Desktop-приложение для детекции объектов в реальном времени на базе нейросети YOLO26.  
+
+---
+
+## 🚀 Возможности
+- **Источники**: веб-камера, видеофайл, изображение, пакетная обработка папки
+- **Модели**: YOLO26 Nano / Small / Medium / Large
+- **Настройки**: пороги Confidence и IoU, размер входа, выбор CPU/CUDA
+- **Экспорт**: запись видео, скриншоты, JSON-отчёты с координатами
+- **Интерфейс**: современный GUI на PyQt6 с live-статистикой (FPS, Latency, объекты)
+
+---
+
+## 📦 Установка
+
+1. **Требования**: Python 3.11+, Windows 10/11, (опционально) NVIDIA GPU с CUDA
+2. **Создайте окружение и установите зависимости**:
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   pip install ultralytics PyQt6 opencv-python numpy matplotlib loguru torch pyyaml

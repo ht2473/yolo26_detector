@@ -1,0 +1,28 @@
+# Среда разработки (Virtual Environment)
+venv/
+ENV/
+env/
+
+# Результаты работы модели (Папка с обработанными данными)
+output/
+
+# Веса моделей и чекпоинты 
+models/*.pt
+
+
+# Python (Кэш и временные файлы)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Конфиденциальные данные и настройки
+.env
+.vscode/
+.idea/
+
+# Логи и системные файлы
+*.log
+.DS_Store
+Thumbs.db

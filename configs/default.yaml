@@ -1,0 +1,26 @@
+# YOLO26 Detector - Конфигурация по умолчанию
+
+app:
+  name: "YOLO26 Detector PRO"
+  version: "2.0.0"
+  author: "Robot"
+
+model:
+  # Указываем вашу основную модель
+  default: "yolo26s.pt"  
+  # Отключаем автоскачивание, так как есть веса в папке
+  auto_download: false 
+  
+detection:
+  confidence_threshold: 0.25 # Чувствительность (0.25 = 25%)
+  iou_threshold: 0.45        # Склейка рамок
+  image_size: 640            # Размер картинки для нейросети
+  
+device:
+  # Используем видеокарту (если есть NVIDIA) или процессор
+  prefer: "cuda"  # варианты: cuda, cpu
+  
+export:
+  save_video: true
+  save_json: true
+  output_dir: "output"
